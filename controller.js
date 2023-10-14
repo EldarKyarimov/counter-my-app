@@ -22,6 +22,4 @@ export default class Controller {
     refresh() {
         this.view.refreshDisplay(this.model.count);
     }
-
-
 }
