@@ -11,6 +11,4 @@ function initialize() {
     controller.init();
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-    return initialize;
-});
+window.addEventListener('DOMContentLoaded', initialize);
