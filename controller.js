@@ -5,8 +5,8 @@ export default class Controller {
     }
 
     init() {
-        this.view.listenIncreaseButton(this.onIncrease);
-        this.view.listenDecreaseButton(this.onDecrease);
+        this.view.listenIncreaseButton(this.onIncrease.bind(this));
+        this.view.listenDecreaseButton(this.onDecrease.bind(this));
     }
 
     onIncrease() {
