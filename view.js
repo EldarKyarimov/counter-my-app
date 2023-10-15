@@ -6,15 +6,11 @@ export default class View {
     }
 
     listenIncreaseButton(callback) {
-        this.increaseButton.addEventListener('click', function () {
-            return callback;
-        });
+        this.increaseButton.addEventListener('click', callback);
     }
 
     listenDecreaseButton(callback) {
-        this.decreaseButton.addEventListener('click', function () {
-            return callback;
-        });
+        this.decreaseButton.addEventListener('click', callback);
     }
 
     refreshDisplay(value) {
